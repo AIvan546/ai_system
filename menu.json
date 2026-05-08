@@ -1,0 +1,501 @@
+[
+  {
+    "id":"omelette_vegetables",
+    "name": "Омлет с овощами",
+    "ingridients":[
+      {"name": "Яйцо куриное", "weight (g)": 100},
+      {"name": "Лук репчатый", "weight (g)": 30},
+      {"name": "Помидоры", "weight (g)": 50},
+      {"name": "Масло подсолнечное", "weight (g)": 5},
+      {"name": "Фасоль стручковая", "weight (g)": 100}
+    ],
+    "tags": ["breakfast", "eggs"],
+    "portion": {"kcal": 247, "p": 16, "f": 17, "c": 8}
+  },
+  {
+    "id":"casserole",
+    "name": "Творожная запеканка",
+    "ingridients": [
+      {"name": "Яйцо куриное", "weight (g)": 25},
+      {"name": "Сахар-песок", "weight (g)": 13},
+      {"name": "Масло сливочное 72%", "weight (g)": 3},
+      {"name": "Творог 0%", "weight (g)": 100},
+      {"name": "Крупа манная", "weight (g)": 13}
+    ],
+    "tags": ["breakfast", "dairy", "eggs"],
+    "portion": {"kcal": 225, "p": 23, "f": 5, "c": 25}
+  },
+  {
+    "id":"cottage_cheese_bread",
+    "name": "Бутерброды с творожной пастой",
+    "ingridients": [
+      {"name": "Чеснок", "weight (g)": 3},
+      {"name": "Хлеб пшеничный", "weight (g)": 80},
+      {"name": "Творог 0%", "weight (g)": 50},
+      {"name": "Сметана 10%", "weight (g)": 50}
+    ],
+    "tags": ["breakfast", "snack", "dairy"],
+    "portion": {"kcal": 277, "p": 17, "f": 6, "c": 42}
+  },
+  {
+    "id":"millet_porridge",
+    "name": "Пшенная каша",
+    "ingridients": [
+      {"name": "Пшено", "weight (g)": 36},
+      {"name": "Вода", "weight (g)": 83},
+      {"name": "Сахар-песок", "weight (g)": 7},
+      {"name": "Масло сливочное 72%", "weight (g)": 3},
+      {"name": "Молоко 2,5%", "weight (g)": 83}
+    ],
+    "tags": ["breakfast", "dairy"],
+    "portion": {"kcal": 249, "p": 7, "f": 5, "c": 42}
+  },
+  {
+    "id":"cottage_cheese_berries",
+    "name": "Творог с ягодами",
+    "ingridients": [
+      {"name": "Творог 5%", "weight (g)": 75},
+      {"name": "Малина", "weight (g)": 50},
+      {"name": "Банан", "weight (g)": 50},
+      {"name": "Молоко 3,2%", "weight (g)": 25}
+    ],
+    "tags": ["breakfast", "dairy"],
+    "portion": {"kcal": 195, "p": 18, "f": 5, "c": 18}
+  },
+  {
+    "id":"barley_porridge_egg",
+    "name": "Ячневая каша с яйцом",
+    "ingridients": [
+      {"name": "Крупа ячневая", "weight (g)": 50},
+      {"name": "Яйцо куриное", "weight (g)": 50},
+      {"name": "Вода", "weight (g)": 200},
+      {"name": "Масло сливочное 72%", "weight (g)": 20}
+    ],
+    "tags": ["breakfast", "dairy", "eggs"],
+    "portion": {"kcal": 370, "p": 12, "f": 21, "c": 34}
+  },
+  {
+    "id":"buckwheat_porridge",
+    "name": "Гречневая каша",
+    "ingridients": [
+      {"name": "Крупа ячневая", "weight (g)": 50},
+      {"name": "Вода", "weight (g)": 100},
+      {"name": "Масло сливочное 72%", "weight (g)": 5}
+    ],
+    "tags": ["breakfast"],
+    "portion": {"kcal": 187, "p": 6, "f": 5, "c": 29}
+  },
+  {
+    "id":"carrot_cutlets",
+    "name": "Морковные котлеты",
+    "ingridients": [
+      {"name": "Молоко 1,5%", "weight (g)": 38},
+      {"name": "Морковь", "weight (g)": 200},
+      {"name": "Крупа манная", "weight (g)": 18},
+      {"name": "Яйцо куриное", "weight (g)": 13},
+      {"name": "Мука пшеничная", "weight (g)": 10},
+      {"name": "Масло подсолнечное", "weight (g)": 2},
+      {"name": "Сметана 10%", "weight (g)": 25},
+      {"name": "Поваренная соль", "weight (g)": 3}
+    ],
+    "tags": ["breakfast", "lunch", "dairy", "eggs"],
+    "portion": {"kcal": 240, "p": 9, "f":  6, "c": 36}
+  },
+  {
+    "id":"potato_pancakes",
+    "name": "Картофельные драники",
+    "ingridients": [
+      {"name": "Морковь", "weight (g)": 200},
+      {"name": "Яйцо куриное", "weight (g)": 25},
+      {"name": "Мука пшеничная", "weight (g)": 13},
+      {"name": "Масло подсолнечное", "weight (g)": 12},
+      {"name": "Поваренная соль", "weight (g)": 3}
+    ],
+    "tags": ["breakfast", "lunch", "eggs"],
+    "portion": {"kcal": 348, "p": 10, "f": 21, "c": 44}
+  },
+  {
+    "id": "vegetable_salad",
+    "name": "Салат из овощей",
+    "ingridients": [
+      {"name": "Капуста белокачанная", "weight (g)": 150},
+      {"name": "Перец красный сладкий", "weight (g)": 100},
+      {"name": "Масло оливковое", "weight (g)": 5},
+      {"name": "Помидоры", "weight (g)": 100},
+      {"name": "Петрушка", "weight (g)": 10}
+    ],
+    "tags": ["breakfast", "snack"],
+    "portion": {"kcal": 138, "p": 5, "f": 5, "c": 18}
+  },
+  {
+    "id":"oatmeal_with_toasts",
+    "name": "Овсянка с гренками",
+    "ingridients": [
+      {"name": "Овсяные хлопья геркулес", "weight (g)": 50},
+      {"name": "Яйцо куриное", "weight (g)": 50},
+      {"name": "Вода", "weight (g)": 150},
+      {"name": "Груша", "weight (g)": 100},
+      {"name": "Мёд", "weight (g)": 10},
+      {"name": "Йогурт 1,5%", "weight (g)": 100},
+      {"name": "Молоко 2,5%", "weight (g)": 30},
+      {"name": "Хлеб зерновой", "weight (g)": 40}
+    ],
+    "tags": ["breakfast", "dairy", "eggs"],
+    "portion": {"kcal": 497, "p": 22, "f": 12, "c": 75}
+  },
+  {
+    "id":"cottage_cheese_with_sour_cream",
+    "name": "Творог со сметаной",
+    "ingridients": [
+      {"name": "Творог 9%", "weight (g)": 50},
+      {"name": "Сметана 30%", "weight (g)": 30}
+    ],
+    "tags": ["breakfast", "snack", "dairy"],
+    "portion": {"kcal": 173, "p": 10, "f": 14, "c": 2}
+  },
+  {
+    "id":"corn_porridge",
+    "name": "Кукурузная каша",
+    "ingridients": [
+      {"name": "Вода", "weight (g)": 165},
+      {"name": "Кукурузная крупа", "weight (g)": 66},
+      {"name": "Поваренная соль", "weight (g)": 2}
+    ],
+    "tags": ["breakfast"],
+    "portion": {"kcal": 216, "p": 5, "f": 1, "c": 47}
+  },
+  {
+    "id":"cheesecakes",
+    "name": "Сырники",
+    "ingridients": [
+      {"name": "Творог 2%", "weight (g)": 125},
+      {"name": "Сахар-песок", "weight (g)": 25},
+      {"name": "Мука пшеничная", "weight (g)": 90},
+      {"name": "Яйцо куриное", "weight (g)": 40},
+      {"name": "Масло подсолнечное", "weight (g)": 5}
+    ],
+    "tags": ["breakfast", "lunch","dinner", "dairy", "eggs", "high-protein"],
+    "portion": {"kcal": 654, "p": 38, "f": 13, "c": 96}
+  },
+  {
+    "id":"baked_trout",
+    "name": "",
+    "ingridients": [
+      {"name": "Речная форель", "weight (g)": 100},
+      {"name": "Сахар-песок", "weight (g)": 1},
+      {"name": "Лимон", "weight (g)": 30},
+      {"name": "Имбирь корень", "weight (g)": 3},
+      {"name": "Масло оливковое", "weight (g)": 3},
+      {"name": "Поваренная соль", "weight (g)": 1}
+    ],
+    "tags": ["lunch", "dinner", "fish"],
+    "portion": {"kcal": 144, "p": 18, "f": 6, "c": 4}
+  },
+  {
+    "id":"kebab_bacon",
+    "name": "Люля-кебаб в беконе",
+    "ingridients": [
+      {"name": "Фарш из говядины", "weight (g)": 100},
+      {"name": "Бекон", "weight (g)": 30},
+      {"name": "Лук репчатый", "weight (g)": 10},
+      {"name": "Поваренная соль", "weight (g)": 1},
+      {"name": "Черный перец", "weight (g)": 1}
+    ],
+    "tags": ["lunch", "dinner", "high-protein"],
+    "portion": {"kcal": 369, "p": 25, "f": 29, "c": 1}
+  },
+  {
+    "id":"baked_turkey",
+    "name": "Жареная индейка",
+    "ingridients": [
+      {"name": "Мандарин", "weight (g)": 6},
+      {"name": "Мясо индейки", "weight (g)": 120},
+      {"name": "Морковь", "weight (g)": 6},
+      {"name": "Лук репчатый", "weight (g)": 6},
+      {"name": "Сельдерей", "weight (g)": 4}
+    ],
+    "tags": ["lunch", "dinner", "high-protein"],
+    "portion": {"kcal": 339, "p": 24, "f": 26, "c": 2}
+  },
+  {
+    "id":"scramled_eggs_with_mushrooms",
+    "name": "Болтунья с грибами",
+    "ingridients": [
+      {"name": "Яйцо куриное", "weight (g)": 70},
+      {"name": "Чеснок", "weight (g)": 5},
+      {"name": "Сыр голландксий", "weight (g)": 15},
+      {"name": "Молоко 3,2%", "weight (g)": 18},
+      {"name": "Шампиньоны", "weight (g)": 50},
+      {"name": "Масло топленое", "weight (g)": 20},
+      {"name": "Поваренная соль", "weight (g)": 2},
+      {"name": "Перец черный", "weight (g)": 1},
+      {"name": "Кинза", "weight (g)": 8}
+    ],
+    "tags": ["breakfast", "lunch", "dinner", "eggs", "dairy", "mushrooms"],
+    "portion": {"kcal": 379, "p": 16, "f": 33, "c": 4}
+  },
+  {
+    "id":"chicken_rolls",
+    "name": "Куриные рулеты с оливковой начинкой",
+    "ingridients": [
+      {"name": "Куриное филе", "weight (g)": 104},
+      {"name": "Масло оливковое", "weight (g)": 7},
+      {"name": "Тимьян", "weight (g)": 1},
+      {"name": "Вяленые томаты", "weight (g)": 10},
+      {"name": "Оливки", "weight (g)": 13},
+      {"name": "Кленовый сироп", "weight (g)": 3}
+    ],
+    "tags": ["lunch", "dinner", "high-protein", "chicken"],
+    "portion": {"kcal": 244, "p": 26, "f": 10, "c": 7}
+  },
+  {
+    "id":"chicken_with_mushrooms",
+    "name": "Куриная грудка с грибами",
+    "ingridients": [
+      {"name": "Куриное филе", "weight (g)": 100},
+      {"name": "Шампиньоны", "weight (g)": 50},
+      {"name": "Лук репчатый", "weight (g)": 25},
+      {"name": "Масло оливковое", "weight (g)": 15},
+      {"name": "Сметана 20%", "weight (g)": 50},
+      {"name": "Вода", "weight (g)": 25}
+    ],
+    "tags": ["lunch", "dinner", "high-protein", "chicken"],
+    "portion": {"kcal": 376, "p": 27, "f": 27, "c": 5}
+  },
+  {
+    "id":"shrimp_with_asparagus",
+    "name": "Креветки со спаржей",
+    "ingridients": [
+      {"name": "Спаржа", "weight (g)": 66},
+      {"name": "Креветки очищенные", "weight (g)": 66},
+      {"name": "Масло оливковое", "weight (g)": 10},
+      {"name": "Чеснок", "weight (g)": 7},
+      {"name": "Поваренная соль", "weight (g)": 2}
+    ],
+    "tags": ["lunch"],
+    "portion": {"kcal": 177, "p": 15, "f": 11, "c": 4}
+  },
+  {
+    "id":"meatballs_with_cheese",
+    "name": "Фрикадельки с сыром",
+    "ingridients": [
+      {"name": "Фарш из говядины", "weight (g)": 100},
+      {"name": "Перец красный", "weight (g)": 25},
+      {"name": "Яйцо куриное", "weight (g)": 13},
+      {"name": "Сыр полутвердый", "weight (g)": 25}
+    ],
+    "tags": ["lunch", "dinner", "eggs", "dairy", "high-protein"],
+    "portion": {"kcal": 337, "p": 27, "f": 23, "c": 3}
+  },
+  {
+    "id":"Chicken_with_rice",
+    "name": "Куриные котлеты с рисом и сельдереем",
+    "ingridients": [
+      {"name": "Куриное филе", "weight (g)": 38},
+      {"name": "Рис белый", "weight (g)": 20},
+      {"name": "Яйцо куриное", "weight (g)": 25},
+      {"name": "Сельдерей, корень", "weight (g)": 50},
+      {"name": "Сметана 10%", "weight (g)": 25}
+    ],
+    "tags": ["lunch", "dinner", "eggs", "dairy", "chicken"],
+    "portion": {"kcal": 279, "p": 19, "f": 6, "c": 38}
+  },
+  {
+    "id":"mackerel_mushroom_sauce",
+    "name": "Скумбрия в грибном соусе",
+    "ingridients": [
+      {"name": "Скумбрия", "weight (g)": 150},
+      {"name": "Шампиньоны", "weight (g)": 38},
+      {"name": "Мука пшеничная", "weight (g)": 10},
+      {"name": "Сливки 10%", "weight (g)": 10},
+      {"name": "Яичный желток куриный", "weight (g)": 6}
+    ],
+    "tags": ["lunch", "dinner", "eggs", "high-protein", "fish", "mushrooms", "dairy"],
+    "portion": {"kcal": 321, "p": 31, "f": 17, "c": 11}
+  },
+  {
+    "id":"chops",
+    "name": "Отбивные",
+    "ingridients": [
+      {"name": "Свинина вырезка", "weight (g)": 100},
+      {"name": "Чеснок", "weight (g)": 10},
+      {"name": "Лук репчатый", "weight (g)": 50},
+      {"name": "Сахар-песок", "weight (g)": 3}
+    ],
+    "tags": ["lunch", "dinner"],
+    "portion": {"kcal": 212, "p": 21, "f": 10, "c": 10}
+  },
+  {
+    "id":"baked_salmon",
+    "name": "Запеченный лосось",
+    "ingridients": [
+      {"name": "Лосось атлантический", "weight (g)": 125},
+      {"name": "Яйцо куриное", "weight (g)": 13},
+      {"name": "Сухари пшеничные", "weight (g)": 13},
+      {"name": "Масло сливочное 72%", "weight (g)": 3}
+    ],
+    "tags": ["dinner", "fish", "high-protein"],
+    "portion": {"kcal": 272, "p": 29, "f": 14, "c": 9}
+  },
+  {
+    "id":"fried_tomatoes_with_pork",
+    "name": "Жареные помидоры со свининой",
+    "ingridients": [
+      {"name": "Помидоры", "weight (g)": 100},
+      {"name": "Свинина", "weight (g)": 20},
+      {"name": "Мука кукурузная", "weight (g)": 20}
+    ],
+    "tags": ["dinner"],
+    "portion": {"kcal": 194, "p": 4, "f": 11, "c": 20}
+  },
+  {
+    "id":"Cottage_cheese_noodle_pie",
+    "name": "Творожный лапшевник",
+    "ingridients": [
+      {"name": "Макароны", "weight (g)": 41},
+      {"name": "Вода", "weight (g)": 85},
+      {"name": "Творог 0%", "weight (g)": 68},
+      {"name": "Яйцо куриное", "weight (g)": 9},
+      {"name": "Сахар-песок", "weight (g)": 7},
+      {"name": "Масло сливочное", "weight (g)": 3},
+      {"name": "Сметана 10%", "weight (g)": 3}
+    ],
+    "tags": ["dinner", "eggs", "dairy"],
+    "portion": {"kcal": 269, "p": 18, "f": 4, "c": 40}
+  },
+  {
+    "id":"stewed_pollock_in_sour_cream",
+    "name": "Минтай, тушенный в сметане",
+    "ingridients": [
+      {"name": "Минтай", "weight (g)": 150},
+      {"name": "Лук репчатый", "weight (g)": 25},
+      {"name": "Сметана 10%", "weight (g)": 25},
+      {"name": "Укроп", "weight (g)": 3}
+    ],
+    "tags": ["dinner", "fish", "high-protein"],
+    "portion": {"kcal": 193, "p": 25, "f": 9, "c": 4}
+  },
+  {
+    "id":"turkey_in_apple_sauce",
+    "name": "Индейка в яблочном соусе",
+    "ingridients": [
+      {"name": "Яблоки", "weight (g)": 130},
+      {"name": "Индюшата 1 категории", "weight (g)": 130},
+      {"name": "Молоко 3,2%", "weight (g)": 50},
+      {"name": "Мука цельнозерновая", "weight (g)": 15}
+    ],
+    "tags": ["dinner", "dairy", "high-protein"],
+    "portion": {"kcal": 325, "p": 28, "f": 18, "c": 25}
+  },
+  {
+    "id":"pilaf",
+    "name": "Плов",
+    "ingridients": [
+      {"name": "Куриная грудка", "weight (g)": 88},
+      {"name": "Рис белый", "weight (g)": 75},
+      {"name": "Вода", "weight (g)": 150},
+      {"name": "Лук репчатый", "weight (g)": 25},
+      {"name": "Морковь", "weight (g)": 25},
+      {"name": "Чеснок", "weight (g)": 4}
+    ],
+    "tags": ["dinner", "lunch", "chicken"],
+    "portion": {"kcal": 438, "p": 26, "f": 8, "c": 64}
+  },
+  {
+    "id":"pasta_with_seafood",
+    "name": "Паста с морепродуктами",
+    "ingridients": [
+      {"name": "Макароны из муки в/с", "weight (g)": 40},
+      {"name": "Лук репчатый", "weight (g)": 33},
+      {"name": "Вода", "weight (g)": 40},
+      {"name": "Сливки 10%", "weight (g)": 17},
+      {"name": "Твердый сыр", "weight (g)": 10},
+      {"name": "Кальмар", "weight (g)": 33},
+      {"name": "Креветки очищенные", "weight (g)": 33}
+    ],
+    "tags": ["lunch", "dinner", "dairy"],
+    "portion": {"kcal": 275, "p": 21, "f": 7, "c": 32}
+  },
+  {
+    "id":"steamed_potatoes",
+    "name": "Картофель в пароварке",
+    "ingridients": [
+      {"name": "Картофель", "weight (g)": 150},
+      {"name": "Укроп", "weight (g)": 5},
+      {"name": "Поваренная соль", "weight (g)": 1}
+    ],
+    "tags": ["dinner", "lunch"],
+    "portion": {"kcal": 118, "p": 3, "f": 1, "c": 25}
+  },
+  {
+    "id":"gazpacho",
+    "name": "Гаспачо",
+    "ingridients": [
+      {"name": "Помидоры", "weight (g)": 100},
+      {"name": "Огурец грунтовый", "weight (g)": 75},
+      {"name": "Томатный сок", "weight (g)": 50},
+      {"name": "Перец красный", "weight (g)": 50},
+      {"name": "Лук репчатый", "weight (g)": 25},
+      {"name": "Сухари ржаные", "weight (g)": 15},
+      {"name": "Укроп", "weight (g)": 10}
+    ],
+    "tags": ["lunch"],
+    "portion": {"kcal": 168, "p": 6, "f": 6, "c": 25}
+  },
+  {
+    "id":"olivier_salad",
+    "name": "Салат Оливье",
+    "ingridients": [
+      {"name": "Куриная грудка", "weight (g)": 39},
+      {"name": "Картофель", "weight (g)": 39},
+      {"name": "Морковь", "weight (g)": 26},
+      {"name": "Огурец соленый", "weight (g)": 26},
+      {"name": "Яйцо куриное", "weight (g)": 20},
+      {"name": "Горошек зеленый", "weight (g)": 13},
+      {"name": "Майонез", "weight (g)": 7}
+    ],
+    "tags": ["breakfast", "snack", "eggs", "chicken"],
+    "portion": {"kcal": 167, "p": 14, "f": 7, "c": 10}
+  },
+  {
+    "id":"pasta_with_walnuts",
+    "name": "Паста с грецкими орехами",
+    "ingridients": [
+      {"name": "Паста (спагетти)", "weight (g)": 100},
+      {"name": "Вода", "weight (g)": 200},
+      {"name": "Орех грецкий", "weight (g)": 28},
+      {"name": "Масло оливковое", "weight (g)": 10},
+      {"name": "Укроп", "weight (g)": 4}
+    ],
+    "tags": ["lunch", "dinner"],
+    "portion": {"kcal": 626, "p": 15, "f": 28, "c": 76}
+  },
+  {
+    "id":"chicken_wings_in_beer",
+    "name": "Куриные крылышки в пиве по-китайски",
+    "ingridients": [
+      {"name": "Куриные крылышки", "weight (g)": 170},
+      {"name": "Пиво", "weight (g)": 34},
+      {"name": "Сахар-песок", "weight (g)": 9},
+      {"name": "Соевый соус", "weight (g)": 9},
+      {"name": "Масло оливковое", "weight (g)": 3}
+    ],
+    "tags": ["dinner", "chicken"],
+    "portion": {"kcal": 464, "p": 32, "f": 31, "c": 12}
+  },
+  {
+    "id":"lentil_soup",
+    "name": "Чечевичный суп с помидорами",
+    "ingridients": [
+      {"name": "Вода", "weight (g)": 180},
+      {"name": "Чечевица", "weight (g)": 35},
+      {"name": "Помидоры", "weight (g)": 32},
+      {"name": "Лук репчатый", "weight (g)": 10},
+      {"name": "Перец красный", "weight (g)": 12},
+      {"name": "Морковь", "weight (g)": 16},
+      {"name": "Масло оливковое", "weight (g)": 6}
+    ],
+    "tags": ["lunch"],
+    "portion": {"kcal": 189, "p": 9, "f": 7, "c": 22}
+  }
+]
