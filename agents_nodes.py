@@ -345,12 +345,19 @@ def menu_node(state: UserState, llm: ChatOpenAI) -> UserState:
         }
         for r in valid_recipes
     ]
+    
+    current_week_menu = state.get("week_menu")
+    if not isinstance(current_week_menu, dict) or not current_week_menu:
+        current_week_menu = data.get("week_menu")
+    if not isinstance(current_week_menu, dict) or not current_week_menu:
+        current_week_menu = None
 
     human = json.dumps(
         {
             "query": state["query"],
             "meals_per_day": meals_per_day,
             "avoid_list": avoid,
+            "current_week_menu": current_week_menu,
             "menu": compact
         },
         ensure_ascii=False
