@@ -75,7 +75,25 @@ def router_node(state: UserState, llm: ChatOpenAI) -> UserState:
     # Fallback: короткие запросы про меню часто дают ambiguous intent у LLM.
     if intent == "unknown":
         q_low = q.lower()
-        if "меню" in q_low or "menu" in q_low:
+        has_menu_word = "меню" in q_low or "menu" in q_low
+        wants_detailed_menu = has_menu_word and any(
+            marker in q_low
+            for marker in (
+                "ингредиент",
+                "ингридиент",
+                "грамм",
+                "граммовк",
+                "детальн",
+                "подробн",
+                "расклад",
+                "состав",
+                "вес продукт",
+                "сколько грамм",
+            )
+        )
+        if wants_detailed_menu:
+            intent = "show_menu_detailed"
+        elif has_menu_word:
             intent = "make_menu"
     state["intent"] = intent
     return state
@@ -503,8 +521,9 @@ def printer_node(state):
         elif profile_ready or profile_complete_in_memory:
             state["final_answer"] = "Характеристики успешно посчитаны"
             return state
-    if intent in ("make_menu", "change_menu", "show_menu"):
+    if intent in ("make_menu", "change_menu", "show_menu", "show_menu_detailed"):
         week_menu = state.get("week_menu") or data.get("week_menu") or {}
+        detailed_menu = intent == "show_menu_detailed"
         if isinstance(week_menu, dict) and week_menu:
             lines = []
             keys = week_menu.keys()
@@ -515,15 +534,15 @@ def printer_node(state):
                     lines.append(f"- Порция х{meal["portion_multiplier"]}")
                     lines.append(f"- {round(meal["totals"]["kcal"], 0)} ккал")
                     lines.append(f"- БЖУ: {round(meal["totals"]["p"], 1)}/{round(meal["totals"]["f"], 1)}/{round(meal["totals"]["c"], 1)}")
-                    """lines.append(" - Ингридиенты:")
-                    ingridients = meal["ingridients"] or []
-                    
-                    for i in ingridients:
-                        weight = i.get("weight (g)")
-                        if isinstance(weight, (int, float)):
-                            lines.append(f"    {i["name"]}: {weight} г")
-                        else:
-                            lines.append(f"    {i["name"]}: —")"""
+                    if detailed_menu:
+                        lines.append("  Ингредиенты:")
+                        for ing in meal.get("ingridients") or []:
+                            w = _parse_ingredient_weight(ing)
+                            nm = ing.get("name", "—")
+                            if isinstance(w, (int, float)):
+                                lines.append(f"    - {nm}: {round(w, 1)} г")
+                            else:
+                                lines.append(f"    - {nm}: —")
             state["final_answer"] = "\n".join(lines)
         elif not state.get("final_answer"):
             state["final_answer"] = "Меню не составлено."
